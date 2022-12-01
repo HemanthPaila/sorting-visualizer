@@ -8,3 +8,12 @@ body
     width:100%;
     background-color: #497174;
 }
+h1
+{
+    margin:0px;
+}
+.title
+{
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+}
