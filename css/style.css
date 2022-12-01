@@ -17,3 +17,22 @@ h1
     font-family: 'Montserrat', sans-serif;
     text-align: center;
 }
+.buttons
+{
+    display:inline-block;
+    height:50px;
+    width:100%;
+    text-align: center;
+    margin-top: 30px;
+}
+a
+{
+    text-decoration: none;
+    color:black;
+    margin-left: 100px;
+    font-family: 'Montserrat', sans-serif;
+    border-color: black;
+    border-style: none;
+    background-color: #EFF5F5;
+    padding:5px 5px;
+}
