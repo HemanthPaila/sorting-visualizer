@@ -4,7 +4,7 @@ body
 }
 .top-container
 {
-    height:150px;
+    height:200px;
     width:100%;
     background-color: #497174;
 }
@@ -15,7 +15,9 @@ h1
 .title
 {
     font-family: 'Montserrat', sans-serif;
-    text-align: center;
+    text-align: left;
+    display:inline-block;
+    margin:10px 10px;
 }
 .buttons
 {
@@ -24,15 +26,27 @@ h1
     width:100%;
     text-align: center;
     margin-top: 30px;
+    position: relative;
 }
 a
 {
     text-decoration: none;
     color:black;
-    margin-left: 100px;
+    margin-left: 50px;
     font-family: 'Montserrat', sans-serif;
     border-color: black;
     border-style: none;
     background-color: #EFF5F5;
     padding:5px 5px;
+    border-radius: 10px;
+}
+.btn
+{
+    position:absolute;
+    right:50px;
+}
+a:hover
+{
+    color:#903749;
+    font-size: 20px;
 }
