@@ -11,13 +11,16 @@ body
 h1
 {
     margin:0px;
+    opacity: 1px;
 }
 .title
 {
-    font-family: 'Montserrat', sans-serif;
-    text-align: left;
-    display:inline-block;
-    margin:10px 10px;
+    text-align: center;
+    font-family: 'Fredoka One', cursive;
+    /* margin:10px 10px; */
+    color:#F5F5F5;
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
 .buttons
 {
@@ -43,10 +46,9 @@ a
 .btn
 {
     position:absolute;
-    right:50px;
+    right:150px;
 }
 a:hover
 {
     color:#903749;
-    font-size: 20px;
 }
