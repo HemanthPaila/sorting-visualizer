@@ -11,7 +11,10 @@ body
 h1
 {
     margin:0px;
-    opacity: 1px;
+}
+p
+{
+    font-family: 'Montserrat', sans-serif;
 }
 .title
 {
@@ -51,13 +54,13 @@ a
 .range-function
 {
     display:inline-block;
-    margin-left:100px;
+    margin-left:110px;
     margin-bottom: 50px;
 }
 .speed-function
 {
     display:inline-block;
-    margin-left: 100px;
+    margin-left: 110px;
 }
 .left-container
 {
@@ -65,6 +68,7 @@ a
     width:20%;
     height:480px;
     background-color: bisque;
+    text-align: center;
 }
 .middle-container
 {
@@ -72,13 +76,30 @@ a
     width: 59.39%;
     height: 480px;
     background-color: #e58304;
+    text-align: center;
 }
 .right-container
 {
     display:inline-block;
     width: 20%;
     height: 480px;
-    background-color: aqua;
+    background-color: bisque;
+    text-align: center;
+}
+.form
+{
+    display:inline-block;
+    margin-left:110px;
+}
+#form-id,#form-id1
+{
+    border-radius: 10px;
+    border-style: none;
+}
+.note
+{
+    display:inline-block;
+    margin-left: 110px;
 }
 a:hover
 {
