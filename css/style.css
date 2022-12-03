@@ -51,8 +51,13 @@ a
 .range-function
 {
     display:inline-block;
-    margin-left:50px;
+    margin-left:100px;
     margin-bottom: 50px;
+}
+.speed-function
+{
+    display:inline-block;
+    margin-left: 100px;
 }
 a:hover
 {
