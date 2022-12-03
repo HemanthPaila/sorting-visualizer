@@ -95,6 +95,7 @@ a
 {
     border-radius: 10px;
     border-style: none;
+    height:20px;
 }
 .note
 {
@@ -104,4 +105,8 @@ a
 a:hover
 {
     color:#903749;
+}
+li
+{
+    font-family: 'Montserrat', sans-serif;
 }
