@@ -1,6 +1,6 @@
 function insertion()
 {
-    for(var i=1;i<Array.length;i++)
+    for(var i=1;i<arr.length;i++)
     {
         var temp=arr[i];
         var j=i;

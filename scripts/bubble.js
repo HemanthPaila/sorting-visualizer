@@ -1,8 +1,8 @@
 function bubble()
 {
-    for(var i=0;i<Array.length-1;i++)
+    for(var i=0;i<arr.length-1;i++)
     {
-        for(var j=0;j<Array.length-1;j++)
+        for(var j=0;j<arr.length-1;j++)
         {
             if(arr[j+1]<arr[j])
             {
