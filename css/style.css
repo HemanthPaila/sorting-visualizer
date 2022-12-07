@@ -34,7 +34,7 @@ p
     position: relative;
 }
 
-a {
+.btn a {
     text-decoration: none;
     color: black;
     margin-left: 50px;
@@ -60,6 +60,11 @@ a {
 {
     display:inline-block;
     margin-left: 110px;
+}
+#git
+{
+    text-decoration: none;
+    color:black
 }
 .left-container
 {

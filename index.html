@@ -23,21 +23,21 @@
         <div class="buttons">
             <div class="btn">
             <a onclick="generate_array()" href="#" id="g_arr">GENERATE NEW ARRAY</a>
-            <a onclick="bubble()" href="#" id="b_sort">BUBBLE SORT</a>
-            <a onclick="insertion()" href="#" id="i_sort">INSERTION SORT</a>
-            <a onclick="selection()" href="#" id="s_sort">SELECTION SORT</a>
-            <a onclick="quick()" href="#" id="q_sort">QUICK SORT</a>
-            <a onclick="merge()" href="#" id="m_sort">MERGE SORT</a>
-            <a onclick="heap()" href="#" id="h_sort">HEAP SORT</a>
+            <a onclick="bubble()" href="#" id="b_sort" value="bubble">BUBBLE SORT</a>
+            <a onclick="insertion()" href="#" id="i_sort" value="insertion">INSERTION SORT</a>
+            <a onclick="selection()" href="#" id="s_sort" value="selection">SELECTION SORT</a>
+            <a onclick="quick()" href="#" id="q_sort" value="quick">QUICK SORT</a>
+            <a onclick="merge()" href="#" id="m_sort" value="merge">MERGE SORT</a>
+            <a onclick="heap()" href="#" id="h_sort" value="heap">HEAP SORT</a>
             </div>
         </div>
         <div class="range-function">
             <p>SIZE OF ARRAY</p>
-            <input type="range" id="size" min="20" max="150" step="1" onchange="array_size()">
+            <input type="range" id="size" min="20" max="150" value="80" step="1" onchange="array_size()">
         </div>
         <div class="speed-function">
             <p>SPEED OF THE ALGORITHM</p>
-            <input type="range" id="speed" min="20" max="150" step="1" onchange="func_speed()">
+            <input type="range" id="speed" min="20" max="150" value="80" step="1" onchange="func_speed()">
         </div>
         <div class="form">
             <p>ENTER GIT HUB USERNAME</p>
@@ -48,7 +48,7 @@
             <section>
                 <p>NOTE</p>
                 <ul>
-                    <li>The source code is avialible in my git hub account.</li>
+                    <li>The source code is avialible in my <a href="https://github.com/pailahemanth/sorting-visualizer" id="git"><em>git hub</em></a> account.</li>
                     <li>You can foke it and make chages and pull a request.</li>
                 </ul>
             </section>
@@ -69,8 +69,8 @@
         <p>Worest case:<p id="space"></p>
     </div>
     </div>
-    <script src="scripts/bubble.js" charset="utf-8"></script>
     <script src="scripts/main.js" charset="utf-8"></script>
+    <script src="scripts/bubble.js" charset="utf-8"></script>
     <script src="scripts/insertion.js" charset="utf-8"></script>
     <script src="scripts/selection.js" charset="utf-8"></script>
     <script src="scripts/quick.js" charset="utf-8"></script>
