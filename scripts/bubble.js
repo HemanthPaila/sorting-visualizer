@@ -1,7 +1,7 @@
 document.getElementById("wcase").innerHTML="O(n)";
 document.getElementById("acase").innerHTML="Θ(n^2)";
 document.getElementById("bcase").innerHTML="Ω(n^2)";
-
+document.getElementById("space").innerHTML="O(1)";
 
 
 

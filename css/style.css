@@ -64,27 +64,39 @@ a
 }
 .left-container
 {
-    display:inline-block;
-    width:20%;
-    height:480px;
+    display: inline-block;
+    width: 25%;
+    height: 500px;
+    position: absolute;
+    top: 0px;
+    left: 0px;
     background-color: bisque;
     text-align: center;
 }
 .middle-container
 {
-    display:inline-block;
-    width: 59.39%;
-    height: 480px;
+    display: inline-block;
+    width: 50%;
+    height: 500px;
+    position: absolute;
+    top: 0px;
+    left: 380px;
     background-color: #e58304;
     text-align: center;
 }
 .right-container
 {
-    display:inline-block;
-    width: 20%;
-    height: 480px;
+    display: inline-block;
+    width: 25%;
+    height: 500px;
+    position: absolute;
+    top: 0px;
+    right: 0px;
     background-color: bisque;
     text-align: center;
+}
+.container {
+    position: relative;
 }
 .form
 {
