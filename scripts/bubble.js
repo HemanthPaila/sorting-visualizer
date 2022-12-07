@@ -1,3 +1,10 @@
+document.getElementById("wcase").innerHTML="O(n)";
+document.getElementById("acase").innerHTML="Θ(n^2)";
+document.getElementById("bcase").innerHTML="Ω(n^2)";
+
+
+
+
 function bubble()
 {
     for(var i=0;i<arr.length-1;i++)
