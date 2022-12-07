@@ -1,6 +1,9 @@
+// variables decleration
 var array=[];
-var arr_size=0;
+var div_arr=[];
+var arr_size=document.querySelector("#size").value;
 var fun_speed=0;
+var container=document.querySelector(".middle-container");
 // generating array size
 function array_size()
 {
@@ -14,14 +17,19 @@ function func_speed()
 // generating an array
 function generate_array()
 {
+    container.innerHTML="";
     array=[];
     for(var i=0;i<arr_size;i++)
     {
-        var random=Math.random()*100;
+        var random=Math.random()*500;
         var number=Math.floor(random)+1;
-        array.push(number);
+        array[i]=number;
+        div_arr[i]=document.createElement("div");
+        container.appendChild(div_arr[i]);
+        div_arr[i].style="width:50px;height:" + (array[i]) + "px;background-color:blue;margin: 1px 1px;";
     }
-    console.log(array);
+    // console.log(arr_size);
+    // console.log(array);
 }
 // disableing buttons
 function disableButtons()

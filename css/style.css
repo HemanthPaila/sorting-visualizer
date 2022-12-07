@@ -80,13 +80,15 @@ p
 .middle-container
 {
     display: inline-block;
+    display:flex;
     width: 50%;
     height: 500px;
     position: absolute;
     top: 0px;
     left: 380px;
-    background-color: #e58304;
+    /* background-color: #e58304; */
     text-align: center;
+    display:flex;
 }
 .right-container
 {

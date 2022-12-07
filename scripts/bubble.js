@@ -1,17 +1,18 @@
 function bubble_sort()
 {
-    for(var i=0;i<arr.length-1;i++)
+    for(var i=0;i<array.length-1;i++)
     {
-        for(var j=0;j<arr.length-1;j++)
+        for(var j=0;j<array.length-1;j++)
         {
-            if(arr[j+1]<arr[j])
+            if(array[j+1]<array[j])
             {
-                var temp=arr[j];
-                arr[j]=arr[j+1];
-                arr[j]=temp;
+                var temp=array[j];
+                array[j]=array[j+1];
+                array[j]=temp;
             }
         }
     }
+    console.log(array);
 }
 
 function bubble()
