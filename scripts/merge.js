@@ -1,4 +1,4 @@
-function merge()
+function merge_sort()
 {
     divide(0,arr.length);
 }
@@ -42,4 +42,13 @@ function conquer(si,mid,ei)
 		{
 			arr[j]=merge[x];
 		}
+}
+
+function merge()
+{
+	document.getElementById("wcase").innerHTML="O(n log n)";
+    document.getElementById("acase").innerHTML="Θ(n log n)";
+    document.getElementById("bcase").innerHTML="Ω(n log n)";
+    document.getElementById("space").innerHTML="O(n)";
+	merge_sort();
 }

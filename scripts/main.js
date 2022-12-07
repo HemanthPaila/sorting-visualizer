@@ -23,6 +23,50 @@ function generate_array()
     }
     console.log(array);
 }
+// disableing buttons
+function disableButtons()
+{
+    document.querySelector("#g_arr").disbaled=true;
+    document.querySelector("#b_sort").disbaled=true;
+    document.querySelector("#i_sort").disbaled=true;
+    document.querySelector("#s_sort").disbaled=true;
+    document.querySelector("#q_sort").disbaled=true;
+    document.querySelector("#m_sort").disbaled=true;
+    document.querySelector("#h_sort").disbaled=true;
+}
+// disableing range fields
+function disableRangeFields()
+{
+    document.querySelector("#size").disbaled=true;
+    document.querySelector("#speed").disbaled=true;
+}
+// disableing form
+function disableForm()
+{
+
+}
+//enableing buttons
+function enableButtons()
+{
+    document.querySelector("#g_arr").disbaled=false;
+    document.querySelector("#b_sort").disbaled=false;
+    document.querySelector("#i_sort").disbaled=false;
+    document.querySelector("#s_sort").disbaled=false;
+    document.querySelector("#q_sort").disbaled=false;
+    document.querySelector("#m_sort").disbaled=false;
+    document.querySelector("#h_sort").disbaled=false;
+}
+// enable range fields
+function enableRangeFields()
+{
+    document.querySelector("#size").disbaled=false;
+    document.querySelector("#speed").disbaled=false;
+}
+// enableing form
+function enableForm()
+{
+
+}
 function main()
 {
     var n;
