@@ -22,7 +22,7 @@
         </div>
         <div class="buttons">
             <div class="btn">
-            <a href="#">GENERATE NEW ARRAY</a>
+            <a onclick="generate_array()" href="#">GENERATE NEW ARRAY</a>
             <a href="#">BUBBLE SORT</a>
             <a href="#">INSERTION SORT</a>
             <a href="#">SELECTION SORT</a>
@@ -33,11 +33,11 @@
         </div>
         <div class="range-function">
             <p>SIZE OF ARRAY</p>
-            <input type="range" min="20" max="150" step="1" value="80">
+            <input type="range" id="size" min="20" max="150" step="1" onchange="array_size()">
         </div>
         <div class="speed-function">
             <p>SPEED OF THE ALGORITHM</p>
-            <input type="range" min="20" max="150" step="1" value="80">
+            <input type="range" id="speed" min="20" max="150" step="1" onchange="func_speed()">
         </div>
         <div class="form">
             <p>ENTER GIT HUB USERNAME</p>
@@ -48,8 +48,8 @@
             <section>
                 <p>NOTE</p>
                 <ul>
-                    <li>The source code is avialible in my git hub account</li>
-                    <li>You can foke it and make chages and pull a request</li>
+                    <li>The source code is avialible in my git hub account.</li>
+                    <li>You can foke it and make chages and pull a request.</li>
                 </ul>
             </section>
         </div>
@@ -70,5 +70,6 @@
     </div>
     </div>
     <script src="scripts/bubble.js" charset="utf-8"></script>
+    <script src="scripts/main.js" charset="utf-8"></script>
 </body>
 </html>

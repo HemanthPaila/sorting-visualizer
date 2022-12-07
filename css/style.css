@@ -25,31 +25,30 @@ p
     padding-top: 10px;
     padding-bottom: 10px;
 }
-.buttons
-{
-    display:block;
-    height:50px;
-    width:100%;
+.buttons {
+    display: block;
+    height: 50px;
+    width: 100%;
     text-align: center;
     margin-top: 30px;
     position: relative;
 }
-a
-{
+
+a {
     text-decoration: none;
-    color:black;
+    color: black;
     margin-left: 50px;
     font-family: 'Montserrat', sans-serif;
     border-color: black;
     border-style: none;
     background-color: #EFF5F5;
-    padding:5px 5px;
+    padding: 5px 5px;
     border-radius: 10px;
 }
-.btn
-{
-    position:absolute;
-    right:150px;
+
+.btn {
+    position: absolute;
+    right: 150px;
 }
 .range-function
 {
