@@ -13,8 +13,9 @@ function selection_sort()
         var temp=array[i];
         array[i]=array[minindex];
         array[minindex]=temp;
+        div_heightSwap(array[i],div_arr[i],"blue");
+        div_heightSwap(array[minindex],div_arr[minindex],"blue");
     }
-    console.log(array);
 }
 function selection()
 {

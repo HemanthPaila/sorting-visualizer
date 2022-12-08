@@ -36,8 +36,6 @@ function generate_array()
         container.appendChild(div_arr[i]);
         div_arr[i].style="width:50px;height:" + (array[i]) + "px;background-color:#e58304;margin: 1px 1px;";
     }
-    console.log(array);
-    console.log(div_arr[0].clientHeight);
 }
 
 // disableing buttons

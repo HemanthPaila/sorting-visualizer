@@ -7,9 +7,11 @@ function insertion_sort()
         while(j>0 && array[j-1]>temp)
         {
             array[j]=array[j-1];
+            div_heightSwap(array[j],div_arr[j],"blue");
             j--;
         }
         array[j]=temp;
+        div_heightSwap(array[j],div_arr[j],"blue");
     }
     console.log(array);
 }
