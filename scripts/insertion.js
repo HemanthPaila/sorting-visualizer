@@ -1,16 +1,17 @@
 function insertion_sort()
 {
-    for(var i=1;i<arr.length;i++)
+    for(var i=1;i<array.length;i++)
     {
-        var temp=arr[i];
+        var temp=array[i];
         var j=i;
-        while(j>0 && arr[j-1]>temp)
+        while(j>0 && array[j-1]>temp)
         {
-            arr[j]=arr[j-1];
+            array[j]=array[j-1];
             j--;
         }
-        arr[j]=temp;
+        array[j]=temp;
     }
+    console.log(array);
 }
 function insertion()
 {

@@ -26,49 +26,49 @@ function generate_array()
         array[i]=number;
         div_arr[i]=document.createElement("div");
         container.appendChild(div_arr[i]);
-        div_arr[i].style="width:50px;height:" + (array[i]) + "px;background-color:blue;margin: 1px 1px;";
+        div_arr[i].style="width:50px;height:" + (array[i]) + "px;background-color:#e58304;margin: 1px 1px;";
     }
-    // console.log(arr_size);
-    // console.log(array);
+    console.log(array);
 }
 // disableing buttons
 function disableButtons()
 {
-    document.querySelector("#g_arr").disbaled=true;
-    document.querySelector("#b_sort").disbaled=true;
-    document.querySelector("#i_sort").disbaled=true;
-    document.querySelector("#s_sort").disbaled=true;
-    document.querySelector("#q_sort").disbaled=true;
-    document.querySelector("#m_sort").disbaled=true;
-    document.querySelector("#h_sort").disbaled=true;
+    document.querySelector("#g_arr").style.pointerEvents="none";
+    document.querySelector("#b_sort").style.pointerEvents="none";
+    document.querySelector("#i_sort").style.pointerEvents="none";
+    document.querySelector("#s_sort").style.pointerEvents="none";
+    document.querySelector("#q_sort").style.pointerEvents="none";
+    document.querySelector("#m_sort").style.pointerEvents="none";
+    document.querySelector("#h_sort").style.pointerEvents="none";
 }
 // disableing range fields
 function disableRangeFields()
 {
-    document.querySelector("#size").disbaled=true;
-    document.querySelector("#speed").disbaled=true;
+    document.querySelector("#size").style.pointerEvents="none";
+    document.querySelector("#speed").style.pointerEvents="none";
 }
 // disableing form
 function disableForm()
 {
-
+    document.querySelector("form-id").style.pointerEvents="none";
+    document.querySelector("form-btn").style.pointerEvents="none";
 }
 //enableing buttons
 function enableButtons()
 {
-    document.querySelector("#g_arr").disbaled=false;
-    document.querySelector("#b_sort").disbaled=false;
-    document.querySelector("#i_sort").disbaled=false;
-    document.querySelector("#s_sort").disbaled=false;
-    document.querySelector("#q_sort").disbaled=false;
-    document.querySelector("#m_sort").disbaled=false;
-    document.querySelector("#h_sort").disbaled=false;
+    document.querySelector("#g_arr").style.pointerEvents="auto";
+    document.querySelector("#b_sort").style.pointerEvents="auto";
+    document.querySelector("#i_sort").style.pointerEvents="auto";
+    document.querySelector("#s_sort").style.pointerEvents="auto";
+    document.querySelector("#q_sort").style.pointerEvents="auto";
+    document.querySelector("#m_sort").style.pointerEvents="auto";
+    document.querySelector("#h_sort").style.pointerEvents="auto";
 }
 // enable range fields
 function enableRangeFields()
 {
-    document.querySelector("#size").disbaled=false;
-    document.querySelector("#speed").disbaled=false;
+    document.querySelector("#size").style.pointerEvents="auto";
+    document.querySelector("#speed").style.pointerEvents="auto";
 }
 // enableing form
 function enableForm()

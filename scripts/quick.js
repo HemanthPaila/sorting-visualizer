@@ -1,6 +1,6 @@
 function qsort()
 {
-    quick_sort(0,arr.length);
+    quick_sort(0,array.length-1);
 }
 function quick_sort(low,high)
 {
@@ -10,6 +10,7 @@ function quick_sort(low,high)
         quick_sort(low,p-1);
         quick_sort(p+1,high);
 }
+
 }
 function partition(low,high)
 {
@@ -17,12 +18,12 @@ function partition(low,high)
 		var i=low-1;
 		for(var j=low;j<=high;j++)
 		{
-			if(arr[j]<=arr[pivot])
+			if(array[j]<=array[pivot])
 			{
 				i++;
-				var t=arr[i];
-				arr[i]=arr[j];
-				arr[j]=t;
+				var t=array[i];
+				array[i]=array[j];
+				array[j]=t;
 			}
 		}
 	return i;
@@ -34,4 +35,5 @@ function quick()
     document.getElementById("bcase").innerHTML="Ω(n log n)";
     document.getElementById("space").innerHTML="O(n)";
 	qsort();
+	console.log(array);
 }
