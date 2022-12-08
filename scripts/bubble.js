@@ -6,12 +6,17 @@ function bubble_sort()
     {
         for(var j=1;j<array.length-i;j++)
         {
+            // select(div_arr[j-1],div_arr[j],"red");
             if(array[j-1]>array[j])
             {
+                // select1(div_arr[j-1],"yellow");
                 var temp=array[j-1];
                 array[j-1]=array[j];
                 array[j]=temp;
+                div_heightSwap(array[j],div_arr[j],"blue");
+                div_heightSwap(array[j-1],div_arr[j-1],"blue");
             }
+            // div_heightSwap(div_arr[j-1],div_arr[j],"blue");
         }
     }
     console.log(array);

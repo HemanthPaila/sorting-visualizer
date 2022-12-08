@@ -1,24 +1,32 @@
 // variables decleration
+
 var array=[];
 var div_arr=[];
 var arr_size=document.querySelector("#size").value;
 var fun_speed=0;
 var container=document.querySelector(".middle-container");
+
 // generating array size
+
 function array_size()
 {
     arr_size=document.querySelector("#size").value;
 }
+
 //generating function speed
+
 function func_speed()
 {
     fun_speed=document.querySelector("#speed").value;
 }
+
 // generating an array
+
 function generate_array()
 {
     container.innerHTML="";
     array=[];
+    div_arr=[];
     for(var i=0;i<arr_size;i++)
     {
         var random=Math.random()*500;
@@ -29,8 +37,11 @@ function generate_array()
         div_arr[i].style="width:50px;height:" + (array[i]) + "px;background-color:#e58304;margin: 1px 1px;";
     }
     console.log(array);
+    console.log(div_arr[0].clientHeight);
 }
+
 // disableing buttons
+
 function disableButtons()
 {
     document.querySelector("#g_arr").style.pointerEvents="none";
@@ -41,19 +52,25 @@ function disableButtons()
     document.querySelector("#m_sort").style.pointerEvents="none";
     document.querySelector("#h_sort").style.pointerEvents="none";
 }
+
 // disableing range fields
+
 function disableRangeFields()
 {
     document.querySelector("#size").style.pointerEvents="none";
     document.querySelector("#speed").style.pointerEvents="none";
 }
+
 // disableing form
+
 function disableForm()
 {
     document.querySelector("form-id").style.pointerEvents="none";
     document.querySelector("form-btn").style.pointerEvents="none";
 }
+
 //enableing buttons
+
 function enableButtons()
 {
     document.querySelector("#g_arr").style.pointerEvents="auto";
@@ -64,17 +81,50 @@ function enableButtons()
     document.querySelector("#m_sort").style.pointerEvents="auto";
     document.querySelector("#h_sort").style.pointerEvents="auto";
 }
+
 // enable range fields
+
 function enableRangeFields()
 {
     document.querySelector("#size").style.pointerEvents="auto";
     document.querySelector("#speed").style.pointerEvents="auto";
 }
+
 // enableing form
+
 function enableForm()
+{
+    document.querySelector("form-id").style.pointerEvents="auto";
+    document.querySelector("form-btn").style.pointerEvents="auto";
+}
+
+// function to change colors of bars
+
+function div_change_color()
 {
 
 }
+//selecting bars
+function select(x,y,z)
+{
+    x.style.backgroundColor=z;
+    y.style.backgroundColor=z;
+}
+
+//selecting1 bars
+function select1(x,y)
+{
+    x.style.backgroundColor=y;
+}
+
+//div_heightSwap
+
+function div_heightSwap(x,y,z)
+{
+    y.style="width:50px;height:" + (x) + "px;background-color:" +(z)+";margin: 1px 1px;";
+}
+
+// calling to all functions.
 function main()
 {
     var n;
