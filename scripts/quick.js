@@ -24,6 +24,8 @@ function partition(low,high)
 				var t=array[i];
 				array[i]=array[j];
 				array[j]=t;
+				div_heightSwap(array[i],div_arr[i],"blue");
+                div_heightSwap(array[j],div_arr[j],"blue");
 			}
 		}
 	return i;
@@ -35,5 +37,4 @@ function quick()
     document.getElementById("bcase").innerHTML="Ω(n log n)";
     document.getElementById("space").innerHTML="O(n)";
 	qsort();
-	console.log(array);
 }

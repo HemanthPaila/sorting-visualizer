@@ -31,6 +31,7 @@ function bubble()
     disableButtons();
     disableRangeFields();
     bubble_sort();
+    console.log(array.length);
     enableButtons();
     enableRangeFields();
 }

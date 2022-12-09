@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- bootstrap -->
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Montserrat&family=Sacramento&display=swap" rel="stylesheet">
+    <!-- styling -->
+    <link rel="stylesheet" href="/style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="top-container">
+        <div class="title">
+            <h1>SORTING VISUALIZER</h1>
+        </div>
+        <div class="buttons">
+            <div class="btn">
+            <a onclick="generate_array()" href="#" id="g_arr">GENERATE NEW ARRAY</a>
+            <a onclick="bubble()" href="#" id="b_sort">BUBBLE SORT</a>
+            <a onclick="insertion()" href="#" id="i_sort">INSERTION SORT</a>
+            <a onclick="selection()" href="#" id="s_sort">SELECTION SORT</a>
+            <a onclick="quick()" href="#" id="q_sort">QUICK SORT</a>
+            <a onclick="merge()" href="#" id="m_sort">MERGE SORT</a>
+            <a onclick="heap()" href="#" id="h_sort">HEAP SORT</a>
+            </div>
+        </div>
+        <div class="range-function">
+            <p>SIZE OF ARRAY</p>
+            <input type="range" id="size" min="20" max="150" value="80" step="1" onchange="array_size()">
+        </div>
+        <div class="speed-function">
+            <p>SPEED OF THE ALGORITHM</p>
+            <input type="range" id="speed" min="20" max="150" value="80" step="1" onchange="func_speed()">
+        </div>
+        <div class="form">
+            <p>ENTER GIT HUB USERNAME</p>
+            <form method="post" action="/update">
+            <input type="text" name="data1" placeholder="GIT HUB USERNAME" id="form-id">
+            <button id="form-id1" id="form-btn" type="submit">submit</button>
+            </form>
+        </div>
+        <div class="note">
+            <section>
+                <p>NOTE</p>
+                <ul>
+                    <li>The source code is avialible in my <a href="https://github.com/pailahemanth/sorting-visualizer" id="git"><em>git hub</em></a> account.</li>
+                    <li>You can foke it and make chages and pull a request.</li>
+                </ul>
+            </section>
+        </div>
+    </div>
+    <div class="container">
+    <div class="left-container">
+        <p>Time Complexity:</p>
+        <p>Worst case:<p id="wcase"></p></p>
+        <p>Average case:<p id="acase"></p></p>
+        <p>Best case:<p id="bcase"></p></p>
+    </div>
+    <div class="middle-container">
+        
+    </div>
+    <div class="right-container">
+        <p>Time Complexity:</p>
+        <p>Worest case:<p id="space"></p>
+    </div>
+    </div>
+    <script src="scripts/main.js" charset="utf-8"></script>
+    <script src="scripts/bubble.js" charset="utf-8"></script>
+    <script src="scripts/insertion.js" charset="utf-8"></script>
+    <script src="scripts/selection.js" charset="utf-8"></script>
+    <script src="scripts/quick.js" charset="utf-8"></script>
+    <script src="scripts/merge.js" charset="utf-8"></script>
+    <script src="scripts/heap.js" charset="utf-8"></script>
+</body>
+</html>

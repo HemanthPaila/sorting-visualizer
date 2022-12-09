@@ -24,6 +24,13 @@ function func_speed()
 
 function generate_array()
 {
+    //when ever you click on generate array then time and space complexities are became empty
+
+    document.getElementById("wcase").innerHTML="";
+    document.getElementById("acase").innerHTML="";
+    document.getElementById("bcase").innerHTML="";
+    document.getElementById("space").innerHTML="";
+    
     container.innerHTML="";
     array=[];
     div_arr=[];
