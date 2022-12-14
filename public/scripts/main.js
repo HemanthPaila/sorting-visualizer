@@ -109,22 +109,10 @@ function div_change_color()
 {
 
 }
-//selecting bars
-function select(x,y,z)
-{
-    x.style.backgroundColor=z;
-    y.style.backgroundColor=z;
-}
-
-//selecting1 bars
-function select1(x,y)
-{
-    x.style.backgroundColor=y;
-}
 
 //div_heightSwap
 
-function div_heightSwap(x,y,z)
+async function div_heightSwap(x,y,z)
 {
     y.style="width:50px;height:" + (x) + "px;background-color:" +(z)+";margin: 1px 1px;";
 }
