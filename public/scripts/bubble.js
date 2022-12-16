@@ -13,7 +13,7 @@ async function bubble_sort() {
         div_heightSwap(array[j + 1], div_arr[j + 1], "red");
         await sleep(0.1);
       }
-      div_heightSwap(array[j], div_arr[j], "blue");
+      div_heightSwap(array[j], div_arr[j], "rgb(229,131,4)");
       await sleep(0.1);
     }
     div_heightSwap(array[j - 1], div_arr[j - 1], "green");
