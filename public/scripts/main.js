@@ -16,7 +16,7 @@ function array_size() {
 
 function func_speed() {
   fun_speed = document.querySelector("#speed").value;
-  console.log(fun_speed);
+  //   console.log(fun_speed);
 }
 
 // generating an array
@@ -130,7 +130,16 @@ function div_change_color() {}
 //sleep function
 
 function sleep(ms) {
-  return new Promise((resolve) => setTimeout(resolve, ms));
+  return new Promise((resolve, reject) =>
+    setTimeout(() => {
+      const error = false;
+      if (!error) {
+        resolve();
+      } else {
+        reject();
+      }
+    }, ms)
+  );
 }
 
 //div_heightSwap
