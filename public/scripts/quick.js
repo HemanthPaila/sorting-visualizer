@@ -4,6 +4,8 @@ function qsort() {
 function quick_sort(low, high) {
   if (low < high) {
     var p = partition(low, high);
+    // div_heightSwap(array[p], div_arr[p], "red");
+    // await sleep(0.1);
     quick_sort(low, p - 1);
     quick_sort(p + 1, high);
   }
@@ -19,7 +21,7 @@ function partition(low, high) {
       array[j] = t;
       div_heightSwap(array[i], div_arr[i], "blue");
       div_heightSwap(array[j], div_arr[j], "blue");
-      //   await sleep(100);
+      // await sleep(10);
     }
   }
   return i;
