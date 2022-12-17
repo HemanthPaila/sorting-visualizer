@@ -13,22 +13,30 @@ function divide(si, ei) {
   conquer(si, mid, ei);
 }
 function conquer(si, mid, ei) {
-  merge = [];
+  merge = [ei - si + 1];
   var idx1 = si;
   var idx2 = mid + 1;
   var i = 0;
   while (idx1 <= mid && idx2 <= ei) {
     if (array[idx1] <= array[idx2]) {
-      merge1[i++] = array[idx1++];
+      merge1[i] = array[idx1];
+      i = i + 1;
+      idx1 = idx1 + 1;
     } else {
-      merge1[i++] = array[idx2++];
+      merge1[i] = array[idx2];
+      i = i + 1;
+      idx2 = idx2 + 1;
     }
   }
   while (idx1 <= mid) {
-    merge1[i++] = array[idx1++];
+    merge1[i] = array[idx1];
+    i = i + 1;
+    idx1 = idx1 + 1;
   }
   while (idx2 <= ei) {
-    merge1[i++] = array[idx2++];
+    merge1[i] = array[idx2];
+    i = i + 1;
+    idx2 = idx2 + 1;
   }
   for (var x = 0, j = si; x < merge1.length; x++, j++) {
     array[j] = merge1[x];
@@ -40,6 +48,7 @@ function merge() {
   document.getElementById("acase").innerHTML = "Θ(n log n)";
   document.getElementById("bcase").innerHTML = "Ω(n log n)";
   document.getElementById("space").innerHTML = "O(n)";
+  console.log(array);
   merge_sort();
   console.log(array);
 }

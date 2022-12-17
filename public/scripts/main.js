@@ -97,36 +97,6 @@ function enableForm() {
   document.querySelector("form-btn").style.pointerEvents = "auto";
 }
 
-// function to change colors of bars
-
-function div_change_color() {}
-
-//function to differ speeds
-// fun_speed.addEventListener("input", f_speed);
-// function f_speed() {
-//   var ch = fun_speed.value;
-//   switch (parseInt(ch)) {
-//     case 1:
-//       speed = 1;
-//       break;
-//     case 2:
-//       speed = 10;
-//       break;
-//     case 3:
-//       speed = 100;
-//       break;
-//     case 4:
-//       speed = 1000;
-//       break;
-//     case 5:
-//       speed = 10000;
-//       break;
-//   }
-//   delay_time = 10000 / (Math.floor(arr_size / 10) * speed);
-// }
-// var delay_time = 10000 / (Math.floor(arr_size / 10) * speed);
-// var c_delay = 0;
-
 //sleep function
 
 function sleep(ms) {
