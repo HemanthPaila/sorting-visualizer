@@ -5,25 +5,25 @@ async function insertion_sort() {
     while (j > 0 && array[j - 1] > temp) {
       div_heightSwap(array[j], div_arr[j], "red");
       div_heightSwap(array[j - 1], div_arr[j - 1], "red");
-      await sleep(10);
+      await sleep(speed);
       array[j] = array[j - 1];
       div_heightSwap(array[j], div_arr[j], "red");
-      await sleep(10);
+      await sleep(speed);
       div_heightSwap(array[j], div_arr[j], "rgb(229,131,4)");
-      await sleep(10);
+      await sleep(speed);
       div_heightSwap(array[j], div_arr[j], "green");
-      await sleep(10);
+      await sleep(speed);
       j--;
     }
     div_heightSwap(array[j], div_arr[j], "red");
-    await sleep(10);
+    await sleep(speed);
     array[j] = temp;
     div_heightSwap(array[j], div_arr[j], "red");
-    await sleep(10);
+    await sleep(speed);
     div_heightSwap(array[j], div_arr[j], "rgb(229,131,4)");
-    await sleep(10);
+    await sleep(speed);
     div_heightSwap(array[j], div_arr[j], "green");
-    await sleep(10);
+    await sleep(speed);
   }
 }
 function insertion() {

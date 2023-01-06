@@ -2,25 +2,25 @@ async function selection_sort() {
   for (var i = 0; i < array.length; i++) {
     var minindex = i;
     div_heightSwap(array[i], div_arr[i], "red");
-    await sleep(1000);
+    await sleep(speed);
     for (var j = i + 1; j < array.length; j++) {
       if (array[j] < array[minindex]) {
         minindex = j;
         div_heightSwap(array[minindex], div_arr[minindex], "red");
-        await sleep(10);
+        await sleep(speed);
       }
       div_heightSwap(array[j], div_arr[j], "red");
-      await sleep(10);
+      await sleep(speed);
       div_heightSwap(array[j], div_arr[j], "rgb(229,131,4)");
-      await sleep(10);
+      await sleep(speed);
     }
     var temp = array[i];
     array[i] = array[minindex];
     array[minindex] = temp;
     div_heightSwap(array[i], div_arr[i], "red");
-    await sleep(10);
+    await sleep(speed);
     div_heightSwap(array[i], div_arr[i], "green");
-    await sleep(10);
+    await sleep(speed);
   }
 }
 function selection() {

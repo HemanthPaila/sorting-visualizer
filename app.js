@@ -1,41 +1,42 @@
-var express=require('express');
-var app=express();
-var bodyParser=require('body-parser');
-const https = require('https');
-app.set("view engine","ejs");
-app.use(bodyParser.urlencoded({extended:true}));
-app.use(express.static(__dirname+ "/public"));
-var mysql = require('mysql2');
-const { json } = require('body-parser');
+var express = require("express");
+var app = express();
+var bodyParser = require("body-parser");
+const https = require("https");
+app.set("view engine", "ejs");
+app.use(bodyParser.urlencoded({ extended: true }));
+app.use(express.static(__dirname + "/public"));
+var mysql = require("mysql2");
+const { json } = require("body-parser");
 var connection = mysql.createConnection({
-  localhost     : '3306',
-  user     : 'root',     // your root username
-  password: 'Hemanth@123',
-  database : 'git_hub_usernames'   // the name of your db
+  localhost: "3306",
+  user: "root", // your root username
+  password: "Hemanth@123",
+  database: "git_hub_usernames", // the name of your db
 });
-app.get("/",function(req,res)
-{
-    res.render("index");
+app.get("/", function (req, res) {
+  res.render("index");
 });
-app.post("/update",function(req,res)
-{
-    var person = {
-    user_name:req.body.data1
-};
-// https.get('https://api.github.com/users/HemanthPaila', function(response){
-//   response.on('data', function(data){
-//     var json=data.toString();
-//     var gitData=JSON.parse(json);
-//     console.log(gitData);
-//   });
-// });
-var end_result = connection.query('INSERT INTO data SET ?', person, function(err, result) {
-  if (err) throw err;
-  console.log(result);
+app.post("/update", function (req, res) {
+  var person = {
+    user_name: req.body.data1,
+  };
+  // https.get('https://api.github.com/users/HemanthPaila', function(response){
+  //   response.on('data', function(data){
+  //     var json=data.toString();
+  //     var gitData=JSON.parse(json);
+  //     console.log(gitData);
+  //   });
+  // });
+  var end_result = connection.query(
+    "INSERT INTO data SET ?",
+    person,
+    function (err, result) {
+      if (err) throw err;
+      // console.log(result);
+    }
+  );
+  res.render("index");
 });
-res.render("index");
-});
-app.listen(3000,function()
-{
-    console.log("server is running at port number 3000!");
+app.listen(3001, function () {
+  console.log("server is running at port number 3001!");
 });

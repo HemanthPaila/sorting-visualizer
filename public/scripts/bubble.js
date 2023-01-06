@@ -5,22 +5,22 @@ async function bubble_sort() {
       if (array[j] > array[j + 1]) {
         div_heightSwap(array[j], div_arr[j], "red");
         div_heightSwap(array[j + 1], div_arr[j + 1], "red");
-        await sleep(0.1);
+        await sleep(speed);
         var temp = array[j];
         array[j] = array[j + 1];
         array[j + 1] = temp;
         div_heightSwap(array[j], div_arr[j], "red");
         div_heightSwap(array[j + 1], div_arr[j + 1], "red");
-        await sleep(0.1);
+        await sleep(speed);
       }
       div_heightSwap(array[j], div_arr[j], "rgb(229,131,4)");
-      await sleep(0.1);
+      await sleep(speed);
     }
     div_heightSwap(array[j - 1], div_arr[j - 1], "green");
-    await sleep(10);
+    await sleep(speed);
   }
   div_heightSwap(array[0], div_arr[0], "green");
-  await sleep(0.1);
+  await sleep(speed);
 }
 function bubble() {
   document.getElementById("wcase").innerHTML = "O(n)";

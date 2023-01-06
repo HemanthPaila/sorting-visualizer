@@ -1,5 +1,5 @@
 // variables decleration
-
+var speed;
 var array = [];
 var div_arr = [];
 var arr_size = document.querySelector("#size").value;
@@ -16,6 +16,18 @@ function array_size() {
 
 function func_speed() {
   fun_speed = document.querySelector("#speed").value;
+  var ch = parseInt(fun_speed);
+  if (ch == 1) {
+    speed = 10000;
+  } else if (ch == 2) {
+    speed = 1000;
+  } else if (ch == 3) {
+    speed = 100;
+  } else if (ch == 4) {
+    speed = 10;
+  } else {
+    speed = 0.01;
+  }
   //   console.log(fun_speed);
 }
 
