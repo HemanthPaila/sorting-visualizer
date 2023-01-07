@@ -33,6 +33,9 @@ function conquer(si, mid, ei) {
   for (var x = 0, j = si; x < merge1.length; x++, j++) {
     array[j] = merge1[x];
   }
+  for (var p = 0; p < array.length; p++) {
+    div_heightSwap(array[p], div_arr[p], "rgb(229,131,4)");
+  }
 }
 
 function merge() {
