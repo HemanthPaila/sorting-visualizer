@@ -6,13 +6,13 @@ app.set("view engine", "ejs");
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(express.static(__dirname + "/public"));
 var mysql = require("mysql2");
-const { json } = require("body-parser");
-var connection = mysql.createConnection({
-  localhost: "3306",
-  user: "root", // your root username
-  password: "Hemanth@123",
-  database: "git_hub_usernames", // the name of your db
-});
+// const { json } = require("body-parser");
+// var connection = mysql.createConnection({
+//   localhost: "3306",
+//   user: "root",
+//   password: "Hemanth@123",
+//   database: "git_hub_usernames",
+// });
 app.get("/", function (req, res) {
   res.render("index");
 });
