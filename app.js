@@ -5,7 +5,8 @@ const https = require("https");
 app.set("view engine", "ejs");
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(express.static(__dirname + "/public"));
-var mysql = require("mysql2");
+const port = 3001;
+// var mysql = require("mysql2");
 // const { json } = require("body-parser");
 // var connection = mysql.createConnection({
 //   localhost: "3306",
@@ -37,6 +38,6 @@ app.post("/update", function (req, res) {
   );
   res.render("index");
 });
-app.listen(3001, function () {
-  console.log("server is running at port number 3001!");
+app.listen(port, function () {
+  console.log(`server is running at port number ${port}`);
 });
